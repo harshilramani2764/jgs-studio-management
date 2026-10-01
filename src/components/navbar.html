@@ -1,0 +1,114 @@
+<!-- Owner Navigation -->
+<div id="ownerNav" class="navbar owner-nav" style="display:none;">
+  <div class="navbar-container">
+    <div class="nav-logo">
+      <h3>🎬 JGS Studio</h3>
+    </div>
+    <ul class="nav-menu">
+      <li><a href="/owner/dashboard">📊 Dashboard</a></li>
+      <li><a href="/owner/inquiries">📋 Inquiries</a></li>
+      <li><a href="/owner/bookings">📅 Bookings</a></li>
+      <li><a href="/owner/calendar">📆 Calendar</a></li>
+      <li><a href="/owner/clients">👥 Clients</a></li>
+      <li><a href="/owner/payments">💰 Payments</a></li>
+      <li><a href="/owner/projects">🎬 Projects</a></li>
+      <li><a href="/owner/deliveries">📦 Deliveries</a></li>
+      <li><a href="/owner/gallery">🖼️ Gallery</a></li>
+      <li><a href="/owner/packages">📦 Packages</a></li>
+      <li><a href="/owner/expenses">💸 Expenses</a></li>
+      <li><a href="/owner/reports">📊 Reports</a></li>
+      <li><a href="/owner/settings">⚙️ Settings</a></li>
+      <li><a href="#" onclick="logout()">🚪 Logout</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- Client Navigation -->
+<div id="clientNav" class="navbar client-nav" style="display:none;">
+  <div class="navbar-container">
+    <div class="nav-logo">
+      <h3>🎬 JGS Studio</h3>
+    </div>
+    <ul class="nav-menu">
+      <li><a href="/client/dashboard">🏠 Home</a></li>
+      <li><a href="/client/my-booking">📅 My Booking</a></li>
+      <li><a href="/client/requirements">✏️ Requirements</a></li>
+      <li><a href="/client/payments">💳 Payments</a></li>
+      <li><a href="/client/preparation">🧸 Preparation</a></li>
+      <li><a href="/client/gallery">🖼️ Gallery</a></li>
+      <li><a href="/client/deliveries">📦 Deliveries</a></li>
+      <li><a href="/client/messages">💬 Messages</a></li>
+      <li><a href="/client/profile">👤 Profile</a></li>
+      <li><a href="#" onclick="logout()">🚪 Logout</a></li>
+    </ul>
+  </div>
+</div>
+
+<style>
+  .navbar {
+    background-color: #333;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-logo h3 {
+    color: white;
+    font-size: 24px;
+    margin: 0;
+  }
+
+  .nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 0;
+    flex-wrap: wrap;
+  }
+
+  .nav-menu li {
+    padding: 0;
+  }
+
+  .nav-menu a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+
+  .nav-menu a:hover {
+    background-color: #667eea;
+  }
+
+  .owner-nav {
+    background-color: #2c3e50;
+  }
+
+  .client-nav {
+    background-color: #764ba2;
+  }
+
+  @media screen and (max-width: 600px) {
+    .nav-menu {
+      flex-direction: column;
+    }
+
+    .nav-menu li {
+      width: 100%;
+    }
+  }
+</style>
